@@ -27,6 +27,10 @@ export default {
       this.hora = ''
       this.gravedad = ''
       this.motivo = ''
+    },
+    isFormValid() {
+      console.log('Validando form')
+      return this.paciente && this.fecha && this.hora && this.gravedad && this.motivo
     }
   },
   emits: ['submit-form']
